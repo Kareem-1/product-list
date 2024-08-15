@@ -1,6 +1,5 @@
 import addShirt from "@/actions/addShirt";
 import Shirts from "@/components/Shirts";
-import { createShirt } from "@/db/queries/insert";
 
 export default function AddShirt(){
     return(
