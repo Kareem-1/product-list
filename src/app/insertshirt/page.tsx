@@ -1,4 +1,4 @@
-import addShirt from "@/actions/addShirt";
+import addShirt from "@/actionss/addShirt";
 import Shirts from "@/components/Shirts";
 
 export default function AddShirt(){

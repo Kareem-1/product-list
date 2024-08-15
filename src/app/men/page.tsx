@@ -4,7 +4,7 @@ import image2 from '../../../public/img2.webp'
 import image3 from '../../../public/img3.webp'
 import image4 from '../../../public/img4.webp'
 import { Item } from "@/components/Item";
-import getShirts from "../../actions/getShirts";
+import getShirts from "@/actionss/getShirts";
 
 export default async function Men() {
 
