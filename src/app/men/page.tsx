@@ -6,8 +6,12 @@ import image4 from '../../../public/img4.webp'
 import { Item } from "@/components/Item";
 import getShirts from "@/actionss/getShirts";
 
-export default async function Men() {
 
+export const revalidate = 10;
+// false | 0 | number
+
+export default async function Men() {
+    
     let number: number = 0;
     let result = await getShirts();
     for (let i = 0; i < result.length; i++) {

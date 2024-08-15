@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { revalidatePath } from "next/cache";
 
 
 export const metadata: Metadata = {
