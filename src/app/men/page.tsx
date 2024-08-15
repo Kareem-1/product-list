@@ -10,9 +10,9 @@ export default async function Men() {
 
     let number: number = 0;
     let result = await getShirts();
-    //for(let i=0; i<array.length;i++){
-    //   number+=1;
-    //}
+    for (let i = 0; i < result.length; i++) {
+        number += 1;
+    }
     //
     //console.log(array);
     //number = Number(array[-1].id);
@@ -20,8 +20,8 @@ export default async function Men() {
         <div className="flex flex-col items-center justify-center">
             <div>{number} styles found</div>
             <div className="grid grid-cols-4 justify-between">
-                {result.map((item)=>{
-                    return <Item key={item.id} name={item.name} link={item.shirtimage} price={item.price}/>
+                {result.map((item) => {
+                    return <Item key={item.id} name={item.name} link={item.shirtimage} price={item.price} />
                 })}
             </div>
         </div>
